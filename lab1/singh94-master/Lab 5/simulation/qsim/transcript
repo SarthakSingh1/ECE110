@@ -1,0 +1,33 @@
+# do Lab5.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 01:11:21 on Oct 01,2020
+# vlog -work work Lab5.vo 
+# -- Compiling module Lab5
+# 
+# Top level modules:
+# 	Lab5
+# End time: 01:11:21 on Oct 01,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 01:11:21 on Oct 01,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module Lab5_vlg_sample_tst
+# -- Compiling module Lab5_vlg_check_tst
+# -- Compiling module Lab5_vlg_vec_tst
+# 
+# Top level modules:
+# 	Lab5_vlg_vec_tst
+# End time: 01:11:21 on Oct 01,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "Lab5.do" 
+# Start time: 01:11:21 on Oct 01,2020
+# Loading work.Lab5_vlg_vec_tst
+# Loading work.Lab5
+# Loading work.Lab5_vlg_sample_tst
+# Loading work.Lab5_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(180)
+#    Time: 80 ns  Iteration: 0  Instance: /Lab5_vlg_vec_tst/tb_out
+# End time: 01:11:21 on Oct 01,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

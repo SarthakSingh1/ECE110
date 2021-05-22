@@ -1,0 +1,29 @@
+; Name: Sarthak Singh
+
+; Date: 11/13/2020
+
+; Purpose: The purpose of this program is to add all the positive values
+; in a set of 10 numbers and store them in a register
+
+; Registers and Use
+; R3 is what stored the address of the 10 numbers
+; R5 is what the sums were added to to get the final sum
+; R4 was the counter to make sure the  program  ran for all 10 numbers
+; R6 is what stores the memory off the adress of R3
+
+;Code starts here
+ 
+0011 0001 0000 0000     ; Initialize at x3100
+1110 011 000110001	; R3 <- PC+3	         	 Makes R3 equal to the first number(x3132)
+0101 101 101 1 00000	; R5 <- R5 AND 0 	         "AND" R5 with 0 to initialize it to 0
+0101 100 100 1 00000	; R4 <- R4 AND 0                 "AND" R4 with 0 to initialize it to 0
+0001 100 100 1 01010	; R4 <- R4 + 10		         Adding R4 to 10 to set it equal to 10
+0110 110 011 000000     ; R6 <- M[R3+0]		         Get the value at R3 and store it in R6
+0000 100 000000001      ; if n, PC <- PC+1               Check if R is negative if it is go to the line 9
+0001 101 110 0 00 101	; R5 <- R5+R6		         R5 = R5+R6
+0001 011 011 1 00001	; R3 <- R3+1		         Increase R3 by 1
+0001 100 100 1 11111	; R4 <- R4+(-1)		         Decrease Ri4 by 1
+0000 101  111111010     ; if np, PC <- PC+(-6)	         If R4 is NOT 0 go up to line 6
+1111 0000 0010 0101	; PC <- M[ZEXT(x25)		 Halt code
+
+

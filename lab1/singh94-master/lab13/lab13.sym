@@ -1,0 +1,21 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	LOOP1             3004
+//	MAINLOOP          300F
+//	LOOP2             3012
+//	NEWVERT           301A
+//	NEWHORI           301F
+//	PRINTONE          3027
+//	SHIFT             3029
+//	NEWLINE           302C
+//	LOOP0             3037
+//	FINISH            303C
+//	ZERO              303D
+//	ONE               303E
+//	CHAR              303F
+//	LINE              3040
+//	RC                3041
+//	FONT_DATA         3042
+

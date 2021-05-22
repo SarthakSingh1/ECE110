@@ -1,0 +1,12 @@
+|Lab5
+A <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+S2 => NotS2.IN0
+S2 => And1.IN0
+S2 => And3.IN1
+S0 => inst2.IN0
+S0 => And3.IN0
+S1 => NotS1.IN0
+S1 => And4.IN1
+P <= Or2.DB_MAX_OUTPUT_PORT_TYPE
+
+
